@@ -77,32 +77,17 @@ The project compares model accuracy across two train-test split configurations a
 ### CNN Architectures
 
 - **Model 1:** Two convolutional layers with 32 and 64 filters, followed by dense layers.
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
-┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
-│ conv2d (Conv2D)                 │ (None, 126, 126, 32)   │           896 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ max_pooling2d (MaxPooling2D)    │ (None, 63, 63, 32)     │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dropout (Dropout)               │ (None, 63, 63, 32)     │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ conv2d_1 (Conv2D)               │ (None, 61, 61, 64)     │        18,496 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ max_pooling2d_1 (MaxPooling2D)  │ (None, 30, 30, 64)     │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dropout_1 (Dropout)             │ (None, 30, 30, 64)     │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ flatten (Flatten)               │ (None, 57600)          │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dense (Dense)                   │ (None, 128)            │     7,372,928 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dropout_2 (Dropout)             │ (None, 128)            │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dense_1 (Dense)                 │ (None, 4)              │           516 │
-└─────────────────────────────────┴────────────────────────┴───────────────┘
+  <img width="506" height="331" alt="image" src="https://github.com/user-attachments/assets/6ad381a0-3c6d-4ae2-9530-dd4f4d3ffcf8" />
+
 - **Model 2:** Two convolutional layers with 32 and 64 filters using 5 × 5 kernels, followed by a larger dense layer.
+  <img width="505" height="274" alt="image" src="https://github.com/user-attachments/assets/e8fc9698-6b25-4009-b3a0-712ed71c76ff" />
+
 - **Model 3:** Two convolutional layers with 64 and 128 filters, followed by a larger dense layer.
+  <img width="506" height="333" alt="image" src="https://github.com/user-attachments/assets/e01e210f-e1b4-4ceb-a382-e6c789db3d0d" />
+
 - **Model 4:** Three convolutional layers with 32, 64, and 128 filters.
+  <img width="501" height="330" alt="image" src="https://github.com/user-attachments/assets/f158a9da-7bbc-447e-b60e-3877b9fcc014" />
+
 
 The architectures differ in convolutional kernel sizes, filter counts, network depth, and dense-layer configurations.
 
@@ -207,21 +192,24 @@ The external image testing module generates:
 
 ```text
 ml-TomatoLeafDiseaseClassification/
-├── Percobaan 1_val.ipynb
-├── Percobaan 2_val.ipynb
+├── Experiment_1.ipynb
+├── Experiment_2.ipynb
 ├── content/
-│   └── dadata/
-│       ├── Tomato___Bacterial_spot/
-│       ├── Tomato___Early_blight/
-│       ├── Tomato___healthy/
-│       └── Tomato___Septoria_leaf_spot/
-├── uji/
-│   ├── bacterial_spot.jpg
-│   ├── early_blight_1.jpg
-│   ├── early_blight_2.jpg
-│   ├── healthy.jpg
-│   ├── septoria_leaf_spot_1.jpg
-│   └── septoria_leaf_spot_2.jpg
+│   ├── dadata/
+│   |   ├── Tomato___Bacterial_spot/
+│   |   ├── Tomato___Early_blight/
+│   |   ├── Tomato___healthy/
+│   |   └── Tomato___Septoria_leaf_spot/
+|   └── uji/
+│       ├── bacterial_spot.jpg
+│       ├── early_blight_1.jpg
+│       ├── early_blight_2.jpg
+│       ├── healthy.jpg
+│       ├── septoria_leaf_spot_1.jpg
+│       └── septoria_leaf_spot_2.jpg
+├── outputs/
+|   ├── external_image_predictions.csv
+|   └── external_image_model_summary.csv
 └── README.md
 ```
 
@@ -253,8 +241,8 @@ pip install tensorflow opencv-python numpy pandas matplotlib seaborn scikit-lear
    jupyter notebook
    ```
 
-5. Open `Percobaan 1_val.ipynb` to run the 80:20 experiment.
-6. Open `Percobaan 2_val.ipynb` to run the 70:30 experiment.
+5. Open `Experiment_1.ipynb` to run the 80:20 experiment.
+6. Open `Experiment_2.ipynb` to run the 70:30 experiment.
 7. Execute the notebook cells in order to preprocess the dataset, train the models, and evaluate their accuracy.
 8. Run the external image testing section and choose either single-image testing or batch testing.
 9. Review the generated visualizations, prediction results, and CSV files.

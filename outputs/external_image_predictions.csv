@@ -1,0 +1,25 @@
+Model,Predicted Class,Confidence,Actual Class,Result,Image
+Model 1,Tomato___Bacterial_spot,0.8889665007591248,Tomato___Bacterial_spot,Correct,bacterial_spot.jpg
+Model 2,Tomato___Bacterial_spot,0.973339319229126,Tomato___Bacterial_spot,Correct,bacterial_spot.jpg
+Model 3,Tomato___Bacterial_spot,0.9858796000480652,Tomato___Bacterial_spot,Correct,bacterial_spot.jpg
+Model 4,Tomato___Bacterial_spot,0.6143655180931091,Tomato___Bacterial_spot,Correct,bacterial_spot.jpg
+Model 1,Tomato___Early_blight,0.8995282053947449,Tomato___Early_blight,Correct,early_blight_1.jpg
+Model 2,Tomato___Early_blight,0.9027073979377747,Tomato___Early_blight,Correct,early_blight_1.jpg
+Model 3,Tomato___Early_blight,0.5601382255554199,Tomato___Early_blight,Correct,early_blight_1.jpg
+Model 4,Tomato___Bacterial_spot,0.6288675665855408,Tomato___Early_blight,Incorrect,early_blight_1.jpg
+Model 1,Tomato___Bacterial_spot,0.9976738095283508,Tomato___Early_blight,Incorrect,early_blight_2.jpg
+Model 2,Tomato___Bacterial_spot,0.9995228052139282,Tomato___Early_blight,Incorrect,early_blight_2.jpg
+Model 3,Tomato___Bacterial_spot,0.9999681711196899,Tomato___Early_blight,Incorrect,early_blight_2.jpg
+Model 4,Tomato___Bacterial_spot,0.7189486026763916,Tomato___Early_blight,Incorrect,early_blight_2.jpg
+Model 1,Tomato___healthy,0.8274775147438049,Tomato___healthy,Correct,healthy.jpg
+Model 2,Tomato___healthy,0.9966686367988586,Tomato___healthy,Correct,healthy.jpg
+Model 3,Tomato___healthy,0.9079739451408386,Tomato___healthy,Correct,healthy.jpg
+Model 4,Tomato___healthy,0.9957913160324097,Tomato___healthy,Correct,healthy.jpg
+Model 1,Tomato___Septoria_leaf_spot,0.9998519420623779,Tomato___Septoria_leaf_spot,Correct,septoria_leaf_spot_1.jpg
+Model 2,Tomato___Septoria_leaf_spot,0.9999334812164307,Tomato___Septoria_leaf_spot,Correct,septoria_leaf_spot_1.jpg
+Model 3,Tomato___Septoria_leaf_spot,0.9999939203262329,Tomato___Septoria_leaf_spot,Correct,septoria_leaf_spot_1.jpg
+Model 4,Tomato___Septoria_leaf_spot,0.9999991655349731,Tomato___Septoria_leaf_spot,Correct,septoria_leaf_spot_1.jpg
+Model 1,Tomato___Early_blight,0.9716022610664368,Tomato___Septoria_leaf_spot,Incorrect,septoria_leaf_spot_2.jpg
+Model 2,Tomato___Early_blight,0.9774191379547119,Tomato___Septoria_leaf_spot,Incorrect,septoria_leaf_spot_2.jpg
+Model 3,Tomato___Early_blight,0.8112543821334839,Tomato___Septoria_leaf_spot,Incorrect,septoria_leaf_spot_2.jpg
+Model 4,Tomato___Septoria_leaf_spot,0.9996713399887085,Tomato___Septoria_leaf_spot,Correct,septoria_leaf_spot_2.jpg

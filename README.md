@@ -1,0 +1,2 @@
+# ml-TomatoLeafDiseaseClassification
+MACHINE LEARNING | IMAGE CLASSIFICATION | PYTHON ‧ CNN
